@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container questrial-regular">
+    <header>
+        <p>WeatherWiz</p>
+        
+            <input id="zipinput" type="text" placeholder="zip code" autocomplete="zip" alt="search searchZip" />
+            <button id="searchZip" onclick="getWeather()">Search</button>
+        
+        
+    </header>
+
+    <div id="content">
+        <div class="city">
+            <span id="city"></span><br>
+        </div>
+        <div class="date">
+            <span id="currentDate"></span><br>
+        </div>
+        <div class="curTemp">
+            <span id="currentTemp"></span><br>
+        </div><br>
+        
+        <div class="conditions">
+            <span id="conditions"></span><br>
+        </div>
+        <div class="temp">
+            <span id="tempHi"></span> 
+            
+            <span id="tempLo"></span>
+        </div>
+
+    </div>
+</div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
