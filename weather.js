@@ -1,4 +1,3 @@
-// const searchZip = document.getElementById('searchZip');
 
 const apiKey = 'ef18d390e6563614d70389d312dc8586';
 let city = document.getElementById('city')
