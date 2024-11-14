@@ -11,15 +11,21 @@ let body = document.getElementById('body')
 const getWeather = () => {
     
     let zipCode = document.getElementById('zipinput').value;
-    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&units=imperial&appid=${apiKey}`)
-    .then(response => response.json())
-    .then(response => {
-        city.innerHTML = response.name,
-        currentDate.innerHTML = new Date().toLocaleDateString(),
-        currentTemp.innerHTML = response.main.temp+'°F',
-        conditions.innerHTML = ` ${response.weather[0].main}`,
-        tempHi.innerHTML = response.main.temp_min+'°F'+'&nbsp / &nbsp',
-        tempLo.innerHTML = response.main.temp_max+'°F'
-    });
+    if (zipCode === '') {
+        alert('Please enter a valid zip code')
+    }else {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&units=imperial&appid=${apiKey}`)
+            .then(response => response.json())
+            .then(response => {
+                city.innerHTML = response.name,
+                    currentDate.innerHTML = new Date().toLocaleDateString(),
+                    currentTemp.innerHTML = response.main.temp+'°F',
+                    conditions.innerHTML = ` ${response.weather[0].main}`,
+                    tempHi.innerHTML = response.main.temp_min+'°F'+'&nbsp / &nbsp',
+                    tempLo.innerHTML = response.main.temp_max+'°F'
+            });
+    }
 
 }
+
+

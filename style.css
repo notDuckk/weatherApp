@@ -3,19 +3,18 @@
 .imgTag {
     backround
 } */
-
+body {
+    background-color: #141619;
+}
 
 .container {
-    
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #4C3BCF;
     border-radius: 5px;
     padding-bottom: 2em;
-    
 }
 
 .questrial-regular {
