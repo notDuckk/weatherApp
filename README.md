@@ -1,6 +1,6 @@
 # WeatherWiz
 
-WeatherWiz is a simple weather app built with HTML, JavaScript, and CSS. Enter a US zip code to see current weather details, including temperature, conditions, and more.
+WeatherWiz is a simple weather app built with HTML, JavaScript, and CSS. It allows users to enter a US zip code and see current weather details such as temperature, conditions, and more, using the [OpenWeatherMap](https://openweathermap.org/api). API.
 
 ## Getting Started
 
