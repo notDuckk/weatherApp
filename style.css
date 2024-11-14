@@ -70,9 +70,7 @@ header {
 
 @media (width < 600px) {
         .container {
-            align-items: baseline ;
-            margin-right: 2em;
-            margin-left: 2em;
+            align-items : center;
     }
 }
 
