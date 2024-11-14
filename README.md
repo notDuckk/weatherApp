@@ -8,6 +8,8 @@ To run this app on your local machine, follow these steps:
 
 ### Prerequisites
 - Web browser (e.g., Chrome, Firefox).
+- Text editor (optional, e.g., VSCode).
+
 
 ### Installation
 
@@ -28,3 +30,10 @@ To run this app on your local machine, follow these steps:
 
 1. Enter a US zip code.
 2. Click "Search" to view the weather information for that location.
+
+## API Setup
+
+1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api).
+2. Open `weather.js` and replace the `apiKey` variable with your own key:
+   ```javascript
+   const apiKey = 'your_api_key_here';

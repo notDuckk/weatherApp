@@ -7,25 +7,32 @@ body {
     background-color: #141619;
 }
 
+.logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain; /* Ensures the image fits within the container without stretching */
+}
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    border-radius: 5px;
-    padding-bottom: 2em;
-}
-
-.questrial-regular {
     font-family: "Questrial", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: aliceblue;
-  }
+}
+
+.yolo {
+    display: flex;
+    justify-content: space-between;
+    /*justify-content : space-between;*/
+}
 
 header {
     font-size: 1.4em;
+
 }
 
 .city {
@@ -63,8 +70,9 @@ header {
 
 @media (width < 600px) {
         .container {
-        margin-right: 3em;
-        margin-left: 3em;
+            align-items: baseline ;
+            margin-right: 2em;
+            margin-left: 2em;
     }
 }
 
